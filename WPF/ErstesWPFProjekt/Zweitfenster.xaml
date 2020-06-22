@@ -1,15 +1,12 @@
-﻿<Window x:Class="ErstesWPFProjekt.MainWindow"
+﻿<Window x:Class="ErstesWPFProjekt.Zweitfenster"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ErstesWPFProjekt"
         mc:Ignorable="d"
-        Title="Hauptfenster" Height="250" Width="200">
-    <StackPanel> <!-- Container -->
-        <Button Click="Button_Click_1">1. Button</Button>
-        <Button x:Name="zweiterButton" Click="zweiterButton_Click">2. Button</Button>
-        <TextBox Name="txtBox"></TextBox>
-        <Button Click="Button_Click">3. Button</Button>
+        Title="Zweitfenster" Height="350" Width="300">
+    <StackPanel>
+        <TextBox Name="txtBoxZweitfenster">Hallo</TextBox>
     </StackPanel>
 </Window>
