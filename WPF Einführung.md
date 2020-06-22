@@ -9,3 +9,13 @@
 	- Windows Desktop Anwendungen
 	- Windows Store-Apps (ab Windows 8 mittels WinRT)
 
+## Merkmale von WPF
+
++ Hierarchische Oberflächenbeschreibung mit XAML (wie XML)
++ Desktop- oder Browseranwendung (Browseranwendung ist obsolet)
++ Grafikausgabe ist vektor- und DirectXbasiert (beschleunigt und skalierbar)
++ Umfangreiche Unterstützung für 2D- und 3D-Grafik, komplexe grafische Animationen und Grafikeffekte (Schatten, Transparenz, Rotation etc.)
++ Ünterstützung Medien (Videos, Bilder, Audio)
++ Einfache Datenbingung
++ Teilweise Abwärtskompatibilität durch Windows Forms-Integration
+
