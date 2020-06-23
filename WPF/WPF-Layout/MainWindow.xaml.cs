@@ -24,6 +24,7 @@ namespace WPF_Layout
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void btnStackPanel_Click(object sender, RoutedEventArgs e)

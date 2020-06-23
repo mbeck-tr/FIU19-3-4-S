@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF_Layout"
         mc:Ignorable="d"
         Title="dockPanelLayout" Height="450" Width="400">
-    <DockPanel LastChildFill="False">
+    <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
             <Button Content="B"></Button>
             <Button Content="K"></Button>
