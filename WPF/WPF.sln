@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErsteWPFAnwendung", "ErsteW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErstesWPFProjekt", "ErstesWPFProjekt\ErstesWPFProjekt.csproj", "{C794C934-36E9-4805-9B42-5E28ED2F10A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Layout", "WPF-Layout\WPF-Layout.csproj", "{5BC78E92-AAFF-4067-A94D-3110736B12D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C794C934-36E9-4805-9B42-5E28ED2F10A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C794C934-36E9-4805-9B42-5E28ED2F10A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C794C934-36E9-4805-9B42-5E28ED2F10A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC78E92-AAFF-4067-A94D-3110736B12D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC78E92-AAFF-4067-A94D-3110736B12D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC78E92-AAFF-4067-A94D-3110736B12D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC78E92-AAFF-4067-A94D-3110736B12D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

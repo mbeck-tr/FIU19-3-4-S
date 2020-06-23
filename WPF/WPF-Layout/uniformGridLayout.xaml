@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_Layout.uniformGridLayout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Layout"
+        mc:Ignorable="d"
+        Title="uniformGridLayout" Height="450" Width="400">
+    <UniformGrid Columns="2" Rows="3">
+        <Label Background="Beige" Content="Zelle1"></Label>
+        <StackPanel Background="Aqua">
+            <CheckBox Content="Zelle2"></CheckBox>
+            <CheckBox Content="cb2"></CheckBox>
+            <CheckBox Content="cb3"></CheckBox>
+            <CheckBox Content="cb4"></CheckBox>
+        </StackPanel>
+        <Label Background="LightGreen" Content="Zelle3"></Label>
+        <Button Background="LightBlue" Content="Zelle4"></Button>
+        <Label Background="OrangeRed" Content="Zelle5"></Label>
+        <TextBox Background="LightYellow" Text="Zelle6"></TextBox>
+        <Button Content="test" Click="Button_Click"></Button>
+    </UniformGrid>
+</Window>
