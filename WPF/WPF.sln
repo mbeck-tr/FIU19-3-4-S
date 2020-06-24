@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Übungen", "Übungen", "{CE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Rechner", "WPF-Rechner\WPF-Rechner.csproj", "{77E21C08-AC54-4E86-8125-7DD542C24FA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Controls", "WPF-Controls\WPF-Controls.csproj", "{A52433CC-D4F6-422D-912E-853233057E76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{77E21C08-AC54-4E86-8125-7DD542C24FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E21C08-AC54-4E86-8125-7DD542C24FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E21C08-AC54-4E86-8125-7DD542C24FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52433CC-D4F6-422D-912E-853233057E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52433CC-D4F6-422D-912E-853233057E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52433CC-D4F6-422D-912E-853233057E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52433CC-D4F6-422D-912E-853233057E76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
