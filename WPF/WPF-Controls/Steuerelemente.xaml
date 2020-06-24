@@ -7,6 +7,122 @@
         mc:Ignorable="d"
         Title="Steuerelemente" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label Target="{Binding ElementName=txtb1}"  Name="label1" 
+                   Content="Bear_beiten: "></Label>
+            <PasswordBox Name="txtb2"
+                         KeyUp="txtb2_KeyUp"
+                         PasswordChar="?"></PasswordBox>
+            <TextBox Name="txtb1">erste Box</TextBox>
+            <Button Name="btn1" Click="btn1_Click">Mein Button</Button>
+            <ToggleButton Name="tbtn1" 
+                          Checked="tbtn1_Checked"
+                          Unchecked="tbtn1_Unchecked">ToggleButton</ToggleButton>
+            <RepeatButton Name="rbtn1"
+                          Interval="500"
+                          Delay="2000"
+                          Click="rbtn1_Click">RepeatButton</RepeatButton>
+        </StackPanel>
+        <Button Grid.Column="1" Grid.Row="0" 
+                Name="btnContent"
+                Click="btnContent_Click">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Image Source="d:\\tux.jpg"
+                       Width="50"
+                       Height="60"
+                       Margin="0,0,10,0"></Image>
+                <TextBlock VerticalAlignment="Center"
+                           FontWeight="Bold">Pinguin</TextBlock>
+            </StackPanel>
+        </Button>
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <Label Content="Textbox:"></Label>
+            <TextBox Name="txtbMultiline" 
+                    Text="ABCDEFGHIJK"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     Height="37"
+                     MaxLines="10"
+                     MinLines="1"
+                     MaxLength="20"
+                     SpellCheck.IsEnabled="True"
+                     SpellCheck.SpellingReform="PreAndPostreform"
+                     VerticalScrollBarVisibility="Auto"
+                     CaretBrush="Red"></TextBox>
+            <TextBox Text="Mein Text ist ein ganz langer langer Text, der über den Rand hinausgeht"
+                     IsReadOnly="True"
+                     TextWrapping="NoWrap" Height="40"
+                     HorizontalScrollBarVisibility="Visible"></TextBox>
+            <Button Name="btnCursor" Click="btnCursor_Click">Set cursor</Button>
+            <Button Name="btnInsert" Click="btnInsert_Click">Insert Text</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="5">
+            <CheckBox Name="cb1" 
+                      Foreground="Blue"
+                      Checked="cb1_Checked"
+                      Unchecked="cb1_Unchecked">
+                Ich kann lesen
+            </CheckBox>
+            <CheckBox Name="cb2"
+                      Foreground="red"
+                      IsThreeState="True"
+                      IsChecked="True">
+                krankenversichert
+            </CheckBox>
+            <Label Content="-------Radio Button-------"></Label>
+            <RadioButton Name="rb1">Option1</RadioButton>
+            <RadioButton Name="rb2"
+                         IsChecked="True">Option2</RadioButton>
+            <RadioButton Name="rb3" VerticalContentAlignment="Center">
+                <Image Source="d:\\tux.jpg" Width="20"></Image>
+            </RadioButton>
+            <RadioButton Name="rb4">Option4</RadioButton>
+        </StackPanel>
+        <ListBox Grid.Row="1" Grid.Column="1"
+                 SelectionMode="Extended" 
+                 SelectionChanged="ListBox_SelectionChanged"
+                 Name="lb1">
+            <ListBoxItem>element1</ListBoxItem>
+            <ListBoxItem>element2</ListBoxItem>
+            <ListBoxItem>element3</ListBoxItem>
+            <ListBoxItem>element4</ListBoxItem>
+            <ListBoxItem>
+                <Image Source="d:\\tux.jpg" Width="50"/>
+            </ListBoxItem>
+        </ListBox>
+        <ComboBox Name="combo1"
+                  SelectionChanged="combo1_SelectionChanged"
+                  Grid.Row="1" Grid.Column="2"
+                  Height="23"
+                  VerticalAlignment="Top"
+                  IsEditable="True">
+            <ComboBoxItem HorizontalAlignment="Right" Foreground="Green">eintrag1</ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" Background="red">eintrag2</ComboBoxItem>
+            <ComboBoxItem FontFamily="Courier New" FontWeight="Heavy">eintrag3</ComboBoxItem>
+            <ComboBoxItem>
+                <Image Source="d:\\tux.jpg" Width="50"/>
+            </ComboBoxItem>
+            <ComboBoxItem FontSize="6">eintrag5</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="50,26.333,0,0" Grid.Row="2" VerticalAlignment="Top" Width="172" Height="83" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="12.646"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </Window>
