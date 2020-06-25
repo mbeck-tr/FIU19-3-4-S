@@ -7,18 +7,48 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="400">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="23"></RowDefinition>
+        </Grid.RowDefinitions>
         <StackPanel>
+            <Label>Vorname:</Label>
+            <TextBox Name="txtbVorname"></TextBox>
+            <Label>Nachname:</Label>
+            <TextBox Name="txtbNachname"></TextBox>
+            <Label>Geschlecht:</Label>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Content="weiblich" Name="rbW"></RadioButton>
+                <RadioButton Content="männlich" Name="rbM"></RadioButton>
+                <RadioButton Content="divers" Name="rbD"></RadioButton>
+            </StackPanel>
+            <Label>Abteilung:</Label>
+            <ComboBox Name="comboAbteilung">
+                <!--<ComboBoxItem>HR</ComboBoxItem>
+                <ComboBoxItem>Lager</ComboBoxItem>
+                <ComboBoxItem>Produktion</ComboBoxItem>
+                <ComboBoxItem>Verwaltung</ComboBoxItem>
+                <ComboBoxItem>IT</ComboBoxItem>-->
+            </ComboBox>
+            <CheckBox Content="Führungskraft"
+                      Name="cbFuehrungskraft"
+                      IsThreeState="False"></CheckBox>
             <Label>Auswahl Betriebsmittel</Label>
             <ComboBox Name="auswahlBetriebsmittel"
                       SelectionChanged="auswahlBetriebsmittel_SelectionChanged">
-                <ComboBoxItem>Notebook</ComboBoxItem>
+                <!--<ComboBoxItem>Notebook</ComboBoxItem>
                 <ComboBoxItem>Werkzeugkasten</ComboBoxItem>
-                <ComboBoxItem>Schreibutensilien</ComboBoxItem>
+                <ComboBoxItem>Schreibutensilien</ComboBoxItem>-->
             </ComboBox>
             <Label>ausgegebene Betriebsmittel</Label>
             <ListBox Name="ansichtBetriebsmittel">
                 
             </ListBox>
         </StackPanel>
+        <Button Name="btnSpeichern" 
+                Click="btnSpeichern_Click" 
+                Content="Speichern"
+                Grid.Row="1"
+                Grid.Column="0"></Button>
     </Grid>
 </Window>
