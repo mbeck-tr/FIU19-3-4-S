@@ -1,0 +1,24 @@
+﻿<Window x:Class="Mitarbeiter_Erfassen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mitarbeiter_Erfassen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid>
+        <StackPanel>
+            <Label>Auswahl Betriebsmittel</Label>
+            <ComboBox Name="auswahlBetriebsmittel"
+                      SelectionChanged="auswahlBetriebsmittel_SelectionChanged">
+                <ComboBoxItem>Notebook</ComboBoxItem>
+                <ComboBoxItem>Werkzeugkasten</ComboBoxItem>
+                <ComboBoxItem>Schreibutensilien</ComboBoxItem>
+            </ComboBox>
+            <Label>ausgegebene Betriebsmittel</Label>
+            <ListBox Name="ansichtBetriebsmittel">
+                
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
