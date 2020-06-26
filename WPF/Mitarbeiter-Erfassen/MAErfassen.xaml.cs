@@ -88,11 +88,11 @@ namespace Mitarbeiter_Erfassen
         private string GetGeschlechtFromRadioButton()
         {
             if ((bool)rbW.IsChecked)
-                return "w";
+                return "weiblich";
             else if ((bool)rbM.IsChecked)
-                return "m";
+                return "männlich";
             else
-                return "d";
+                return "divers";
         }
     }
 }

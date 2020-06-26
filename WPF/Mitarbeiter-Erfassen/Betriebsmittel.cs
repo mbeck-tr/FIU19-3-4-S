@@ -25,7 +25,11 @@ namespace Mitarbeiter_Erfassen
         public decimal Wert //Properties, Eigenschaften
         {
             set { _wert = value; }
+            get { return _wert; }
         }
+
+        public string Name { get => name; set => name = value; }
+
         public void SetWert(decimal wert) // Methode
         {
             _wert = wert;

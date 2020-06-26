@@ -1,0 +1,103 @@
+﻿<Window x:Class="WPF_Controls2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Controls2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        KeyDown="Window_KeyDown">
+    <Window.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="ContextWindowItem1"/>
+            <MenuItem Header="ContextWindowItem2"/>
+            <MenuItem Header="ContextWindowItem3"/>
+            <Separator/>
+            <MenuItem Header="ContextWindowItem4"/>
+        </ContextMenu>
+    </Window.ContextMenu>
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top" Height="22" Name="menu1">
+            <MenuItem Header="_Datei">
+                <MenuItem Header="Neu" InputGestureText="Strg+N"/>
+                <MenuItem Header="Öffnen">
+                    <MenuItem.Icon>
+                        <Image Source="d:\\tux.jpg" Width="22"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Sichern"/>
+                <Separator/>
+                <MenuItem Header="Beenden"/>
+            </MenuItem>
+            <MenuItem Header="_Bearbeiten">
+                <MenuItem Header="Kopieren"/>
+                <MenuItem Header="Einfügen"/>
+                <Separator></Separator>
+                <MenuItem Header="kleine Schrift" 
+                          IsCheckable="True"/>
+                <MenuItem>
+                    <MenuItem.Header>
+                        <StackPanel>
+                            <Image Source="d:\\tux.jpg" Height="30" Margin="4"/>
+                            <ComboBox>
+                                <ComboBoxItem Selector.IsSelected="True">Zeile1</ComboBoxItem>
+                                <ComboBoxItem>Zeile2</ComboBoxItem>
+                                <ComboBoxItem>Zeile3</ComboBoxItem>
+                                <ComboBoxItem>Zeile4</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Hilfe">
+                <MenuItem Header="_Info" Name="menuInfo" Click="menuInfo_Click"/>
+                <MenuItem Header="Über" IsEnabled="False"/>
+            </MenuItem>
+            
+        </Menu>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Width="30" Height="30">
+                    <Image Source="d:\\tux.jpg"/>
+                </Button>
+                <Button Height="30" Content="Öffnen"/>
+                <Button Height="30" Content="Sichern"/>
+                <Button Height="30" Content="Kopieren"/>
+                <ComboBox>
+                    <ComboBoxItem Selector.IsSelected="True">Eintrag1</ComboBoxItem>
+                    <ComboBoxItem>Eintrag2</ComboBoxItem>
+                    <ComboBoxItem>Eintrag3</ComboBoxItem>
+                    <ComboBoxItem>Eintrag4</ComboBoxItem>
+                </ComboBox>
+                <DatePicker></DatePicker>
+            </ToolBar>
+        </ToolBarTray>
+        <StatusBar DockPanel.Dock="Bottom"  Height="30">
+            <StatusBarItem HorizontalAlignment="Left">
+                <Label Content="Mein Label Inhalt"/>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Center">
+                <TextBox Name="txtbUrl" Width="200">Textboxtext</TextBox>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Center">
+                <Button Click="Button_Click">Click Me!</Button>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <ProgressBar Width="100" Height="20" Value="45"
+                         Maximum="50"
+                         Minimum="30"/>
+            </StatusBarItem>
+        </StatusBar>
+        <StackPanel DockPanel.Dock="Left">
+            <Label Content="Hallo">
+                <Label.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="menuEintrag1"></MenuItem>
+                        <MenuItem Header="menuEintrag2"></MenuItem>
+                    </ContextMenu> 
+                </Label.ContextMenu>
+            </Label>
+        </StackPanel>
+        <WebBrowser Name="webBrowser1" Source="https://www.tagesschau.de"/>
+    </DockPanel>
+</Window>

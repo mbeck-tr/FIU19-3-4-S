@@ -5,14 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mitarbeiter_Erfassen"
         mc:Ignorable="d"
-        Title="MAListe" Height="450" Width="400">
+        Title="MAListe" Height="450" Width="400"
+        Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="23"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0">
-            
+            <Label>Mitarbeiter Nr.:</Label>
+            <Label Name="lblMANr" FontWeight="Bold">0</Label>
+            <Label>Name:</Label>
+            <Label Name="lblMaName" FontWeight="Bold">Mustermann, Max</Label>
+            <Label>Geschlecht:</Label>
+            <Label Name="lblMAGeschlecht" FontWeight="Bold">männlich</Label>
+            <Label>Abteilung:</Label>
+            <Label Name="lblMAAbteilung" FontWeight="Bold">Musterabteilung</Label>
+            <Label>Betriebsmittel:</Label>
+            <ListBox Name="lbMABetriebsmittel" IsEnabled="False" FontWeight="Bold"></ListBox>
         </StackPanel>
         <UniformGrid Columns="3" Rows="1" Grid.Column="0" Grid.Row="1">
             <Button Name="btnLeft" Content="vorheriger" Click="btnLeft_Click"></Button>
